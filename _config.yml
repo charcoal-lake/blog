@@ -18,7 +18,7 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-remote_theme: b2a3e8/jekyll-theme-console
+remote_theme: kitian616/jekyll-TeXt-theme
 url: "https://charcoal-lake.github.io"
 baseurl: "/blog"
 title   : Your Site Title
