@@ -77,7 +77,7 @@ textarea { vertical-align: top; }
  */
 .lineno { color: var(--code-color-1); margin-right: 15px; }
 figure.highlight { margin: 5px 0; }
-pre { background-color: 3A3A3A;  border: none;  padding: 5px;  margin: 5px;  overflow:auto;  font-size: $base-font-size;  color: #FFF;  line-height: 1.7 !important;  font-family: $base-font-family !important; }
+pre { background-color: #3A3A3A;  border: none;  padding: 5px;  margin: 5px;  overflow:auto;  font-size: $base-font-size;  color: #FFF;  line-height: 1.7 !important;  font-family: $base-font-family !important; }
 .highlight .hll { background-color: var(--code-color-2); }
 .highlight .c { color: var(--code-color-1); font-style: italic } /* Comment */
 .highlight .err { color: var(--code-color-3); background-color: var(--code-color-4); } /* Error */
