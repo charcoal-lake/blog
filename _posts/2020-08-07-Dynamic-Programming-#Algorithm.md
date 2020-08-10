@@ -11,13 +11,13 @@
 분할정복의 대표적인 알고리즘에는 **mergesort**, **quick sort**, **쉬트라센의 행렬곱셈 알고리즘** 이 있다.<br>
 가장 대표적인 **merge sort**의 알고리즘은 그림과 같이 **큰 문제를 분할하여 들어간 뒤, 작은 문제들로 해결한다**.
 
-![mergesort]({{site.url}}/assets/image/dp/mergesort.jpg)
+![mergesort]({{site.url}}/blog/assets/image/dp/mergesort.jpg)
 
 반대로, 동적계획법은 **작은 문제부터 출발하여 큰 문제를 해결한다**. 따라서 점화식이 사용된다. 또한 중요한 특징으로 '캐시'를 사용한다는 점이 있는데, 캐시를 사용하지 않을 경우 재귀적 알고리즘에 불과하지만 캐시를 사용함으로써 동적계획법은 압도적인 효율을 보여준다. 대표적인 동적계획법 알고리즘에는 **피보나치 수 구하기**, **이항계수 구하기**, **프로이드의 최단경로 알고리즘**, **연쇄 행렬 곱셈**, **최적 이분검색트리**, **외판원 문제(travling salesperson problem)**, **DNA 서열 문제** 등이 있으며 대부분의 문제들은 동적 계획법으로 해결이 가능하다는 점에서 매우 강력한 알고리즘이다.
 
 가장 대표적인 **피보나치 수 구하기** 알고리즘은 다음과 같이 **작은 문제부터 기록을 시작하여 큰 문제를 해결한다**.
 
-![fibonacci]({{site.url}}/assets/image/dp/fibonacci.jpg)
+![fibonacci]({{site.url}}/blog/assets/image/dp/fibonacci.jpg)
 
 ***
 
@@ -577,7 +577,7 @@ Sequence Alignment는 유전학에서 염기서열의 유사 정도를 비교하
 2. mismatch
 gap는 서열 사이에 대시를 끼운 것이며, mismatch는 염기쌍이 서로 다른 것을 의미한다. gap의 cost(비용)를 g, mismatch의 cost를 m이라고 할 때, 앞서 제시된 두 sequence를 다음과 같은 방법(A,B)으로 align 할 수 있을 것이다. (여러가지 방법 중 하나의 예시이다)
 
-![DNA]({{site.url}}/assets/image/dp/img1.png)
+![DNA]({{site.url}}/blog/assets/image/dp/img1.png)
 
 alignment (A)의 총 비용은 4g+2m이며 (B)의 총 비용은 2g+3m이다. 이 때 g와 m의 값에 따라서 둘 중 어느 정렬이 더 적은 비용으로 나타나는가가 결정된다.
 
@@ -590,7 +590,7 @@ Dynamic Programming으로 접근이 가능한지 알기 위해서 먼저 Princip
 
 앞의 두 서열을 다음과 같이 배열 x,y로 표현한다.
 
-![DNA]({{site.url}}/assets/image/dp/img2.png)
+![DNA]({{site.url}}/blog/assets/image/dp/img2.png)
 
 opt(i,j)를 부분 서열 `x[i...9]` 와 `y[j..7]`의 optimal(minimal) cost라고 하자. Principle of Optimality에 따라 opt(0,0)이 더 작은 부분 서열의 optimal cost를 포함하는지 알기 위해서, 다음과 같이 case를 분류하여 본다.
 
@@ -630,21 +630,21 @@ Principle of Optimality가 확인 되었으므로, Dynamic Programming으로 최
 
 (A) opt(10, 8)을 먼저 초기화 한다. `x[10]` = `y[8]` 이므로 opt(10,8) = 0
 
-![DNA]({{site.url}}/assets/image/dp/img3.png)
+![DNA]({{site.url}}/blog/assets/image/dp/img3.png)
 
 (B) opt(10,j), opt(i,8) 을 초기화 한다. (j : 8 이하의 양의 정수, i : 10이하의 양의 정수), (1), (2)식 사용
 
-![DNA]({{site.url}}/assets/image/dp/DNA4.png)
+![DNA]({{site.url}}/blog/assets/image/dp/DNA4.png)
 
 (C) (3) 식 사용하여 나머지 칸을 채운다.
 
-![DNA]({{site.url}}/assets/image/dp/DNA5.png)
+![DNA]({{site.url}}/blog/assets/image/dp/DNA5.png)
 
-![DNA]({{site.url}}/assets/image/dp/DNA6.png)
+![DNA]({{site.url}}/blog/assets/image/dp/DNA6.png)
 
 표를 다 채운 결과는 다음과 같다.
 
-![DNA]({{site.url}}/assets/image/dp/DNA8.png)
+![DNA]({{site.url}}/blog/assets/image/dp/DNA8.png)
 
 
 최종적으로 optimal sequence를 출력할 때에 (0,0)에서부터 노란색 칸을 따라가는데, 대각선 방향으로 이동하면 i번째 문자를 x 서열에 넣고 j번째 문자를 y 서열에 넣고, 오른쪽 방향으로 이동하면 x 서열에 – (gap)을 추가하고 j 번째 문자를 y 서열에 넣고, 아래 방향으로 이동하면 y 서열에 – (gap)을 추가하고 i번째 문자를 x 서열에 넣는다.
