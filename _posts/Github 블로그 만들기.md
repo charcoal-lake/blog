@@ -15,7 +15,7 @@ jekyll을 사용하여 github.io 로 끝나는 블로그를 만들어보자 :D
 
 블로그로 사용할 레포를 만든다. 나는 이미 만들어둔 `/blog` 레포를 사용하였으나, 평소에 레포를 만들던대로 만들면 된다.
 
-![레포지토리 만들기](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/repo.png?raw=true)
+![레포지토리 만들기]({{site.url}}/assets/image/github-blog/repo.png)
 
 다음으로 원하는 jekyll 테마를 github에서 찾는다.<br> https://github.com/topics/jekyll-theme
 
@@ -24,13 +24,13 @@ jekyll을 사용하여 github.io 로 끝나는 블로그를 만들어보자 :D
 
 ### `_config.yml` 파일 가져오기
 
-![config 가져오기 1](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/conf1.png?raw=true)
-![config 가져오기 2](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/conf2.png?raw=true)
-![config 가져오기 3](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/conf3.png?raw=true)
+![config 가져오기 1]({{site.url}}/assets/image/github-blog/conf1.png)
+![config 가져오기 2]({{site.url}}/assets/image/github-blog/conf2.png)
+![config 가져오기 3]({{site.url}}/assets/image/github-blog/conf3.png)
 
 모든 jekyll 테마에는 `_config.yml` 이라는 파일이 있다. 이 파일을 열어 `raw` 버튼을 누르면 전체를 복사할 수 있게 된다. 파일을 복사하여 나의 로컬 레포지토리 폴더에 새 파일을 만든 뒤 붙여넣고, `_config.yml`로 저장한다.
 
-![config 가져오기 4](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/conf4.png?raw=true)
+![config 가져오기 4]({{site.url}}/assets/image/github-blog/conf4.png)
 
 위와 같이 만들었다.
 
@@ -66,18 +66,18 @@ baseurl: "/yourreposname"
 
 샘플페이지를 참고하여 `_config.yml`의 구조와 전체적인 레포의 구조를 참고한다.
 
-![sample](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/sample1.png?raw=true)
-![sample](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/sample2.png?raw=true)
+![sample]({{site.url}}/assets/image/github-blog/sample1.png)
+![sample]({{site.url}}/assets/image/github-blog/sample2.png)
 
 ### publish
 
 repository의 settings에서 GitHub Pages 옵션으로 이동하여 master 브랜치에 사이트를 publish 해주자.
 
-![publish](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/publish.png?raw=true)
+![publish]({{site.url}}/assets/image/github-blog/publish.png)
 
 페이지가 준비되면 위와같이 초록색으로 변하고 puslish가 되었다고 나온다. 바로 링크를 눌러 테스트해본다.
 
-![page](https://github.com/charcoal-lake/blog/blob/master/assets/img/image/github-blog/page.png?raw=true)
+![page]({{site.url}}/assets/image/github-blog/page.png)
 
 성공 \\(^0^)/ !!
 
