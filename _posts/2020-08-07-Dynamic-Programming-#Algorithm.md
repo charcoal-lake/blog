@@ -17,7 +17,7 @@
 
 가장 대표적인 **피보나치 수 구하기** 알고리즘은 다음과 같이 **작은 문제부터 기록을 시작하여 큰 문제를 해결한다**.
 
-![fibonacci]({{site.url}}/blog/assets/image/dp/fibonacci.jpg)
+![fibonacci]({{site.url}}/blog/assets/image/dp/fibo.jpg)
 
 ***
 
@@ -634,17 +634,17 @@ Principle of Optimality가 확인 되었으므로, Dynamic Programming으로 최
 
 (B) opt(10,j), opt(i,8) 을 초기화 한다. (j : 8 이하의 양의 정수, i : 10이하의 양의 정수), (1), (2)식 사용
 
-![DNA]({{site.url}}/blog/assets/image/dp/DNA4.png)
+![DNA]({{site.url}}/blog/assets/image/dp/img4.png)
 
 (C) (3) 식 사용하여 나머지 칸을 채운다.
 
-![DNA]({{site.url}}/blog/assets/image/dp/DNA5.png)
+![DNA]({{site.url}}/blog/assets/image/dp/img5.png)
 
-![DNA]({{site.url}}/blog/assets/image/dp/DNA6.png)
+![DNA]({{site.url}}/blog/assets/image/dp/img6.png)
 
 표를 다 채운 결과는 다음과 같다.
 
-![DNA]({{site.url}}/blog/assets/image/dp/DNA8.png)
+![DNA]({{site.url}}/blog/assets/image/dp/img8.png)
 
 
 최종적으로 optimal sequence를 출력할 때에 (0,0)에서부터 노란색 칸을 따라가는데, 대각선 방향으로 이동하면 i번째 문자를 x 서열에 넣고 j번째 문자를 y 서열에 넣고, 오른쪽 방향으로 이동하면 x 서열에 – (gap)을 추가하고 j 번째 문자를 y 서열에 넣고, 아래 방향으로 이동하면 y 서열에 – (gap)을 추가하고 i번째 문자를 x 서열에 넣는다.
