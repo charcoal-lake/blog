@@ -1,5 +1,5 @@
 <h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#동적-계획법-vs-분할정복" data-toc-modified-id="동적-계획법-vs-분할정복-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>동적 계획법 vs 분할정복</a></span></li><li><span><a href="#동적계획법과-Optimality-(최적화)-문제" data-toc-modified-id="동적계획법과-Optimality-(최적화)-문제-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>동적계획법과 Optimality (최적화) 문제</a></span></li><li><span><a href="#동적계획법과-Greedy-Algorithm" data-toc-modified-id="동적계획법과-Greedy-Algorithm-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>동적계획법과 Greedy Algorithm</a></span><ul class="toc-item"><li><span><a href="#탐욕법-(Greedy-Algorithm)" data-toc-modified-id="탐욕법-(Greedy-Algorithm)-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>탐욕법 (Greedy Algorithm)</a></span></li><li><span><a href="#동적계획-vs-Greedy-Algorithm" data-toc-modified-id="동적계획-vs-Greedy-Algorithm-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>동적계획 vs Greedy Algorithm</a></span></li></ul></li><li><span><a href="#동적계획법-대표-문제" data-toc-modified-id="동적계획법-대표-문제-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>동적계획법 대표 문제</a></span><ul class="toc-item"><li><span><a href="#이항계수-구하기-(combination)" data-toc-modified-id="이항계수-구하기-(combination)-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>이항계수 구하기 (combination)</a></span></li><li><span><a href="#프로이드의-최단경로-알고리즘---O(n^3)" data-toc-modified-id="프로이드의-최단경로-알고리즘---O(n^3)-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>프로이드의 최단경로 알고리즘 - O(n^3)</a></span></li><li><span><a href="#Traveling-Sales-Person-Problem-(외판원문제)---O(n^2(2^n))" data-toc-modified-id="Traveling-Sales-Person-Problem-(외판원문제)---O(n^2(2^n))-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span>Traveling Sales Person Problem (외판원문제) - O(n^2(2^n))</a></span></li><li><span><a href="#연쇄-행렬-곱셈" data-toc-modified-id="연쇄-행렬-곱셈-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span>연쇄 행렬 곱셈</a></span></li><li><span><a href="#최적-이분검색트리-(Optimal-Binary-Search-Tree)" data-toc-modified-id="최적-이분검색트리-(Optimal-Binary-Search-Tree)-4.5"><span class="toc-item-num">4.5&nbsp;&nbsp;</span>최적 이분검색트리 (Optimal Binary Search Tree)</a></span></li><li><span><a href="#DNA-서열-정렬-+-편집거리-문제" data-toc-modified-id="DNA-서열-정렬-+-편집거리-문제-4.6"><span class="toc-item-num">4.6&nbsp;&nbsp;</span>DNA 서열 정렬 + 편집거리 문제</a></span></li></ul></li><li><span><a href="#코딩테스트-예제" data-toc-modified-id="코딩테스트-예제-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>코딩테스트 예제</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#동적-계획법-vs-분할정복" data-toc-modified-id="동적-계획법-vs-분할정복-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>동적 계획법 vs 분할정복</a></span></li><li><span><a href="#동적계획법과-Optimality-(최적화)-문제" data-toc-modified-id="동적계획법과-Optimality-(최적화)-문제-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>동적계획법과 Optimality (최적화) 문제</a></span></li><li><span><a href="#동적계획법과-Greedy-Algorithm" data-toc-modified-id="동적계획법과-Greedy-Algorithm-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>동적계획법과 Greedy Algorithm</a></span><ul class="toc-item"><li><span><a href="#탐욕법-(Greedy-Algorithm)" data-toc-modified-id="탐욕법-(Greedy-Algorithm)-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>탐욕법 (Greedy Algorithm)</a></span></li><li><span><a href="#동적계획-vs-Greedy-Algorithm" data-toc-modified-id="동적계획-vs-Greedy-Algorithm-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>동적계획 vs Greedy Algorithm</a></span></li></ul></li><li><span><a href="#동적계획법-대표-문제" data-toc-modified-id="동적계획법-대표-문제-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>동적계획법 대표 문제</a></span><ul class="toc-item"><li><span><a href="#이항계수-구하기-(combination)" data-toc-modified-id="이항계수-구하기-(combination)-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>이항계수 구하기 (combination)</a></span></li><li><span><a href="#프로이드의-최단경로-알고리즘---O(n^3)" data-toc-modified-id="프로이드의-최단경로-알고리즘---O(n^3)-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>프로이드의 최단경로 알고리즘 - O(n^3)</a></span></li><li><span><a href="#Traveling-Sales-Person-Problem-(외판원문제)---O(n^2(2^n))" data-toc-modified-id="Traveling-Sales-Person-Problem-(외판원문제)---O(n^2(2^n))-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span>Traveling Sales Person Problem (외판원문제) - O(n^2(2^n))</a></span></li><li><span><a href="#연쇄-행렬-곱셈" data-toc-modified-id="연쇄-행렬-곱셈-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span>연쇄 행렬 곱셈</a></span></li><li><span><a href="#최적-이분검색트리-(Optimal-Binary-Search-Tree)" data-toc-modified-id="최적-이분검색트리-(Optimal-Binary-Search-Tree)-4.5"><span class="toc-item-num">4.5&nbsp;&nbsp;</span>최적 이분검색트리 (Optimal Binary Search Tree)</a></span></li><li><span><a href="#DNA-서열-정렬-+-편집거리-문제" data-toc-modified-id="DNA-서열-정렬-+-편집거리-문제-4.6"><span class="toc-item-num">4.6&nbsp;&nbsp;</span>DNA 서열 정렬 + 편집거리 문제</a></span></li></ul></li><li><span><a href="#코딩테스트-예제" data-toc-modified-id="코딩테스트-예제-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>코딩테스트 예제</a></span><ul class="toc-item"><li><span><a href="#DNA-서열-문제,-편집거리-문제" data-toc-modified-id="DNA-서열-문제,-편집거리-문제-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span>DNA 서열 문제, 편집거리 문제</a></span><ul class="toc-item"><li><span><a href="#DNA-Sequence-Alignment-문제" data-toc-modified-id="DNA-Sequence-Alignment-문제-5.1.1"><span class="toc-item-num">5.1.1&nbsp;&nbsp;</span>DNA Sequence Alignment 문제</a></span></li><li><span><a href="#Principle-of-Optimality" data-toc-modified-id="Principle-of-Optimality-5.1.2"><span class="toc-item-num">5.1.2&nbsp;&nbsp;</span>Principle of Optimality</a></span></li><li><span><a href="#Dynamic-Programming-패러다임에-의한-접근" data-toc-modified-id="Dynamic-Programming-패러다임에-의한-접근-5.1.3"><span class="toc-item-num">5.1.3&nbsp;&nbsp;</span>Dynamic Programming 패러다임에 의한 접근</a></span></li><li><span><a href="#시간-복잡도" data-toc-modified-id="시간-복잡도-5.1.4"><span class="toc-item-num">5.1.4&nbsp;&nbsp;</span>시간 복잡도</a></span></li></ul></li></ul></li></ul></div>
 
 # Dynamic Programming
 
@@ -11,13 +11,13 @@
 분할정복의 대표적인 알고리즘에는 **mergesort**, **quick sort**, **쉬트라센의 행렬곱셈 알고리즘** 이 있다.<br>
 가장 대표적인 **merge sort**의 알고리즘은 그림과 같이 **큰 문제를 분할하여 들어간 뒤, 작은 문제들로 해결한다**.
 
-![mergesort](../assets/img/image/dp/mergesort.jpg)
+![mergesort](/assets/image/mergesort.jpg)
 
 반대로, 동적계획법은 **작은 문제부터 출발하여 큰 문제를 해결한다**. 따라서 점화식이 사용된다. 또한 중요한 특징으로 '캐시'를 사용한다는 점이 있는데, 캐시를 사용하지 않을 경우 재귀적 알고리즘에 불과하지만 캐시를 사용함으로써 동적계획법은 압도적인 효율을 보여준다. 대표적인 동적계획법 알고리즘에는 **피보나치 수 구하기**, **이항계수 구하기**, **프로이드의 최단경로 알고리즘**, **연쇄 행렬 곱셈**, **최적 이분검색트리**, **외판원 문제(travling salesperson problem)**, **DNA 서열 문제** 등이 있으며 대부분의 문제들은 동적 계획법으로 해결이 가능하다는 점에서 매우 강력한 알고리즘이다.
 
 가장 대표적인 **피보나치 수 구하기** 알고리즘은 다음과 같이 **작은 문제부터 기록을 시작하여 큰 문제를 해결한다**.
 
-![fibonacci](../assets/img/image/dp/fibo.jpg)
+![fibonacci](/assets/image/fibonacci.jpg)
 
 ***
 
@@ -216,7 +216,6 @@ D(A)는 다음과 같이 작성된다.
 
 `D(A)[i][j] = minimum(W[i][A]+W[A][j], W[i][j])`
 
-
 |D(A)|A|B|C|D|E|
 |-|-|-|-|-|-|
 |A|0|1|-|1|5|
@@ -225,11 +224,9 @@ D(A)는 다음과 같이 작성된다.
 |D|-|-|2|0|3|
 |E|3|4|-|4|0|
 
-
 D(B)는 D(A)와 W를 참조하여 작성된다.
 
 `D(B)[i][j] = minimum(D(A)[i][B] + W[B][j], D(A)[i][j])`
-
 
 |D(B)|A|B|C|D|E|
 |-|-|-|-|-|-|
@@ -238,7 +235,6 @@ D(B)는 D(A)와 W를 참조하여 작성된다.
 |C|-|-|0|4|-|
 |D|-|-|2|0|3|
 |E|3|4|7|6|0|
-
 
 즉, 예를 들어 `D(B)[A][D]`를 구하고자 한다면 A에서 바로 D로 가는 것과 A에서 B를 거쳐 D로 가는 것 중 가장 작은 값을 비교하여 해당 셀에 넣는다.
 
@@ -255,9 +251,7 @@ D(B)는 D(A)와 W를 참조하여 작성된다.
 int main(){
     int i, j, k, m, n;
     int mat[5][5], path[5][5];
-    int edge[5][5] = {
-        {0, 1, INF, 1, 5},{9, 0, 3, 2, INF},{INF, INF, 0, 4, INF},{INF, INF, 2, 0, 3},{3, INF, INF, INF, 0}
-    };
+    int edge[5][5] = {{0, 1, INF, 1, 5},{9, 0, 3, 2, INF},{INF, INF, 0, 4, INF},{INF, INF, 2, 0, 3},{3, INF, INF, INF, 0}};
                      
     for(i=0; i<5; i++)
         for(j=0; j<5; j++)
@@ -557,6 +551,110 @@ int main(){
     ld: symbol(s) not found for architecture x86_64
     clang: error: linker command failed with exit code 1 (use -v to see invocation)
     [C kernel] GCC exited with code 1, the executable will not be executed
+
+### DNA 서열 문제, 편집거리 문제
+
+이 부분은 알고리즘 수업에서 제출했던 레포트로 대신한다.
+
+---
+
+#### DNA Sequence Alignment 문제
+Sequence Alignment는 유전학에서 염기서열의 유사 정도를 비교하기 위해 사용된다. DNA를 이루는 염기에는 아데닌(A), 티민(T), 시토닌(C), 구아닌(G)가 있으며, 아데닌과 티민, 시토닌과 구아닌이 각각 쌍을 이룬다. 이 염기들이 결합하여 길게 뻗어 연결되어있는 것을 DNA Sequence 라고 하며 여기서는 하나의 문자열로 생각하여 아래와 같이 나타내기로 한다.
+
+**ACGTCAG**
+
+(원래는 쌍을 이루는 DNA Sequence인 **TGCAGTC** 를 함께 표시하여 주어야 하지만, A-T와 C-G는 항상 쌍을 이루기 때문에 생략한다.)
+
+이제 아래와 같은 두 Sequence(이하 서열)가 있다고 하자.
+
+**AACAGTTACC**
+**TAAGGTCA**
+
+두 순열을 정렬(align)하였을 때 두 순열이 얼마나 차이가 나는가를 두가지로 비교할 수 있다
+1. gap
+2. mismatch
+gap는 서열 사이에 대시를 끼운 것이며, mismatch는 염기쌍이 서로 다른 것을 의미한다. gap의 cost(비용)를 g, mismatch의 cost를 m이라고 할 때, 앞서 제시된 두 sequence를 다음과 같은 방법(A,B)으로 align 할 수 있을 것이다. (여러가지 방법 중 하나의 예시이다)
+
+![DNA](../assets/img/image/github-blog/DNA1.png)
+![DNA](../assets/img/image/github-blog/DNA2.png)
+
+alignment (A)의 총 비용은 4g+2m이며 (B)의 총 비용은 2g+3m이다. 이 때 g와 m의 값에 따라서 둘 중 어느 정렬이 더 적은 비용으로 나타나는가가 결정된다.
+
+이후로는 g = 2, m = 1이라고 가정하여 문제를 해결해본다.
+
+
+#### Principle of Optimality
+
+Dynamic Programming으로 접근이 가능한지 알기 위해서 먼저 Principle of Optimality가 성립하는지 알아본다.
+
+앞의 두 서열을 다음과 같이 배열 x,y로 표현한다.
+
+![DNA](../assets/img/image/github-blog/DNA3.png)
+
+opt(i,j)를 부분 서열 `x[i...9]` 와 `y[j..7]`의 optimal(minimal) cost라고 하자. Principle of Optimality에 따라 opt(0,0)이 더 작은 부분 서열의 optimal cost를 포함하는지 알기 위해서, 다음과 같이 case를 분류하여 본다.
+
+1. `x[0]`를 `y[0]`와 정렬하는 경우
+    1-1. `x[0]` == `y[0]` 인 경우 cost = opt(1,1)
+	1-2. `x[0]` != `y[0]` 인 경우 cost = 1 + opt(1,1)
+2. `x[0]`을 틈과 정렬하는 경우 cost = 2 + opt(1,0)
+3. `y[0]`을 틈과 정렬하는 경우 cost = 2 + opt(0,1)
+
+opt(0,0)는 정렬할 수 있는 case 중에서 가장 작은 비용이 된다. 즉,
+
+`opt(0,0) = min(opt(1,1)+penalty, opt(1,0)+2, opt(0,1)+2)`
+
+따라서 `x[0…9]`, `y[0...7]`의 optimal solution에 대해 더 작은 정렬에 대한 optimal solution이 포함 되어있음을 알 수 있다.
+
+**(다른 증명)**
+`x[0..9]`, `y[0..9]`의 optimal alignment를 A라고 하고 A에 포함된 `x[1..9]`, `y[1..9]`의 alignment를 B라고 할 때, B가 optimal이 아니라고 가정한다. 가정에 의해 B보다 비용이 작은 정렬 C가 존재한다. 그렇다면 정렬 C에 `x[0]`, `y[0]`을 맞추어 정렬하면 그 정렬이 `x[0..9]`, `y[0..7]`에 대한 optimal alignment가 된다. 따라서 A가 optimal하다는 가정에 위배된다. 따라서 B는  optimal이다.
+
+
+#### Dynamic Programming 패러다임에 의한 접근
+
+Principle of Optimality가 확인 되었으므로, Dynamic Programming으로 최적 비용을 구해본다.
+
+**Bottom-Up으로 계산**
+
+두 서열(x,y)의 크기를 각각 m, n이라고 하자. opt(i,j)을 계산하기 위해서는 opt(i,j+1), opt(i+1,j), opt(i+1,j+1)를 계산해야 한다. 중복 계산을 피하기 위해서 n+1, m+1 크기의 배열을 사용한다. 각 칸은 표의 오른쪽 아래에서부터 채워나간다. (bottom-up) 표를 채울 때 사용되는 식은 다음 세 가지 중에 하나이다.
+
+1. opt(m, j) = 2(n-j)
+2. opt(i, n) = 2(m-i)
+3. opt(i,j) = min(opt(i+1,j+1)+penalty, opt(i+1,j)+2, opt(i,j+1)+2)
+
+배열의 맨 아래행의 opt(i,j) 값을 계산하기 위해서는 (1) 식을 쓰고, 오른쪽 열의 opt(i,j)값을 계산하기 위해서는 (2) 식을 쓰고, 나머지 칸을 채울 때에는 (3)을 쓴다.
+배열 값을 계산하며 경로도 동시에 찾을 수 있는데, 배열 값을 저장할 때마다 해당 배열 칸을 기록해두면 된다.
+
+여기서 penalty는 `x[i]`과 `y[j]`이 같은 값 일 때에는 0, 다른 값일 때에는 1이다. 
+2의 표에서 보였던 서열 x,y를 예제로 step-by-step procedure를 보이면 다음과 같이 진행된다. 노란색으로 표시된 배열칸은 저장할 때 기록된 배열칸이며, 추적하면 optimal alignment를 구할 수 있다.
+
+(A) opt(10, 8)을 먼저 초기화 한다. `x[10]` = `y[8]` 이므로 opt(10,8) = 0
+
+
+
+(B) opt(10,j), opt(i,8) 을 초기화 한다. (j : 8 이하의 양의 정수, i : 10이하의 양의 정수), (1), (2)식 사용
+
+(C) (3) 식 사용하여 나머지 칸을 채운다.
+표를 다 채운 결과는 다음과 같다.
+
+최종적으로 optimal sequence를 출력할 때에 (0,0)에서부터 노란색 칸을 따라가는데, 대각선 방향으로 이동하면 i번째 문자를 x 서열에 넣고 j번째 문자를 y 서열에 넣고, 오른쪽 방향으로 이동하면 x 서열에 – (gap)을 추가하고 j 번째 문자를 y 서열에 넣고, 아래 방향으로 이동하면 y 서열에 – (gap)을 추가하고 i번째 문자를 x 서열에 넣는다.
+
+#### 시간 복잡도
+
+3의 과정을 pseudo code로 옮기면 다음과 같다.
+
+```
+입력 : string X, Y (X와 Y의 길이는 각각 m, n)
+출력 : X와 Y의 optimal alignment와 비용
+for (i=0; i<m+1; i++) Opt[i, n] = 2(m-i);      // O(m)
+for (j=0; j<n+1; j++) Opt[m, j] = 2(n-j);      // O(n)
+for (i = m ; i>=0 ; i--)
+for (j=n; j>=0; j--)
+    if (x[i] == y[j]) penalty = 0; else penalty = 1;
+    Opt[i][j] = min(Opt[i+1][j+1]+penalty,Opt[i+1][j]+2,Opt[i][j+1]+2);
+
+```
+
+따라서 시간복잡도는 O(nm).
 
 
 ```c
