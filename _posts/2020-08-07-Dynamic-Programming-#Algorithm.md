@@ -251,7 +251,9 @@ D(B)는 D(A)와 W를 참조하여 작성된다.
 int main(){
     int i, j, k, m, n;
     int mat[5][5], path[5][5];
-    int edge[5][5] = {{0, 1, INF, 1, 5},{9, 0, 3, 2, INF},{INF, INF, 0, 4, INF},{INF, INF, 2, 0, 3},{3, INF, INF, INF, 0}};
+    int edge[5][5] = {
+        {0, 1, INF, 1, 5},{9, 0, 3, 2, INF},{INF, INF, 0, 4, INF},{INF, INF, 2, 0, 3},{3, INF, INF, INF, 0}
+    };
                      
     for(i=0; i<5; i++)
         for(j=0; j<5; j++)
