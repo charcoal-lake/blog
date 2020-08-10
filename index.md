@@ -1,7 +1,7 @@
 ---
 title: 개발노트 by "choe"
 layout: home
-permalink: /home/
+permalink: /
 ---
 
 # 개발 노트
