@@ -644,7 +644,7 @@ Principle of Optimality가 확인 되었으므로, Dynamic Programming으로 최
 
 표를 다 채운 결과는 다음과 같다.
 
-![DNA]({{site.url}}/blog/assets/image/dp/img8.png)
+![DNA]({{site.url}}/blog/assets/image/dp/img7.png)
 
 
 최종적으로 optimal sequence를 출력할 때에 (0,0)에서부터 노란색 칸을 따라가는데, 대각선 방향으로 이동하면 i번째 문자를 x 서열에 넣고 j번째 문자를 y 서열에 넣고, 오른쪽 방향으로 이동하면 x 서열에 – (gap)을 추가하고 j 번째 문자를 y 서열에 넣고, 아래 방향으로 이동하면 y 서열에 – (gap)을 추가하고 i번째 문자를 x 서열에 넣는다.
